@@ -1,0 +1,188 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #fff8f0;
+  color: #1a1a1a;
+}
+
+.hero {
+  background: url('resturant.jpg') center/cover no-repeat;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  padding: 100px 20px;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.item {
+ height: auto; 
+ width: 100%;
+}
+
+.item img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s;
+}
+.item img:hover {
+  transform: scale(1.05);
+}
+
+.cart, .reviews, .contact {
+  padding: 20px;
+}
+
+button {
+  background: #e8000d;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+button:hover {
+  background: #a3000a;
+}
+
+@media (max-width: 600px) {
+  .hero { padding: 60px 10px; }
+  h1 { font-size: 1.8rem; }
+}
+
+.cart, .reviews, .contact {
+  background-color: white;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.cart h2, .reviews h2, .contact h2 {
+  color: #e53935;
+  margin-bottom: 15px;
+}
+
+.reviews p {
+  background-color: #fff5f5;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.contact button {
+  margin: 5px;
+}
+.menu h2 {
+  color: #e53935;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background-color: #fff8f0;
+}
+.item {
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.item:hover {
+  transform: translateY(-8px);
+}
+button:hover {
+  background-color: #b71c1c;
+}
+.about, .why-us {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.about h2, .why-us h2 {
+  color: #e53935;
+  margin-bottom: 15px;
+}
+
+.about p {
+  line-height: 1.7;
+  font-size: 18px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.why-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.review-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.review-form input,
+.review-form select,
+.review-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.review-form textarea {
+  height: 90px;
+}
+
+.review-card {
+  background: #fff5f5;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.payment {
+  background-color: white;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.payment h2 {
+  color: #e53935;
+  margin-bottom: 15px;
+}

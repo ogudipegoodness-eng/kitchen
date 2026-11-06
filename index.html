@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teddy's Kitchen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header class="hero">
+    <h1>Welcome to Teddy's Kitchen</h1>
+    <p>Delicious meals, ready to order</p>
+    <button onclick="document.getElementById('menu').scrollIntoView()">See Menu</button>
+  </header>
+
+  
+  <section id="menu" class="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-grid"style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+      <div class="item">
+        <img src="jollof-rice.jpg" alt="Jollof Rice">
+        <h3>Jollof Rice</h3>
+        <p>₦3000</p>
+        <button onclick="addToCart('Jollof Rice', 3000)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="egusi.jpg" alt="egusi soup">
+        <h3>Egusi soup</h3>
+        <p>₦5000</p>
+        <button onclick="addToCart('Egusi soup', 5000)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="grilled-chicken.jpg" alt="Grilled Chicken">
+        <h3>Grilled Chicken</h3>
+        <p>₦5000</p>
+        <button onclick="addToCart('Grilled Chicken', 5000)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="pounded-yam.jpg" alt="pounded yam">
+        <h3>Pounded Yam</h3>
+        <p>₦4000</p>
+        <button onclick="addToCart('Pounded Yam', 4000)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="pizza.jpg" alt="pizza">
+        <h3>Pizza</h3>
+        <p>₦7000</p>
+        <button onclick="addToCart('Pizza', 7000)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="eba-soup.jpg" alt="eba and soup">
+        <h3>Eba and Soup</h3>
+        <p>₦3000</p>
+        <button onclick="addToCart('Eba and Soup', 3000)">Add to Cart</button>
+      </div>
+    </div>
+<section class="about">
+  <h2>About Teddy's Kitchen</h2>
+  <p>Teddy's Kitchen serves fresh, tasty Nigerian meals made with love. From smoky jollof rice to hot egusi soup, every plate is cooked to order and delivered fast.</p>
+</section>
+
+<section class="why-us">
+  <h2>Why Choose Teddy's Kitchen?</h2>
+  <div class="why-grid">
+    <div class="why-card">
+      <h3>🍲 Fresh Food</h3>
+      <p>Cooked fresh every day with quality ingredients.</p>
+    </div>
+    <div class="why-card">
+      <h3>🚚 Fast Delivery</h3>
+      <p>Your food gets to you hot and on time.</p>
+    </div>
+    <div class="why-card">
+      <h3>💰 Fair Prices</h3>
+      <p>Delicious meals that don't break your pocket.</p>
+    </div>
+  </div>
+</section>
+  </section>
+
+  <section class="cart">
+  <h2>Your Cart</h2>
+  <div id="cart-items"></div>
+  <p>Total: ₦<span id="total">0</span></p>
+  <button onclick="checkout()">Send Order on WhatsApp</button>
+</section>
+
+<section class="payment">
+  <h2>Payment & Location</h2>
+  <p><strong>Bank:</strong> OPAY OR MONIEPOINT</p>
+  <p><strong>Account Name:</strong> OGUNDIPE GOODNESS OLUWANIFEMI</p>
+  <p><strong>Account Number:</strong> 9024122646</p>
+  <p><strong>Location:</strong> Afe Babalola University (ABUAD), Ado-Ekiti, Ekiti State</p>
+</section>
+
+  <section id="reviews" class="reviews">
+    <h2>Customer Reviews</h2>
+    <div class="review">
+      <p>"Best jollof rice in town!"</p>
+      <span>★★★★★</span>
+    </div>
+    <div class="review">
+      <p>"Fast delivery and tasty food."</p>
+      <span>★★★★☆</span>
+    </div>
+     <div id="review-list"></div>
+
+<div class="review-form">
+  <h3>Leave a Review</h3>
+  <input type="text" id="reviewName" placeholder="Your name">
+  <select id="reviewStars">
+    <option value="5">★★★★★</option>
+    <option value="4">★★★★☆</option>
+    <option value="3">★★★☆☆</option>
+    <option value="2">★★☆☆☆</option>
+    <option value="1">★☆☆☆☆</option>
+  </select>
+  <textarea id="reviewText" placeholder="Write your review here..."></textarea>
+  <button onclick="addReview()">Submit Review</button>
+</div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <button onclick="window.open('https://wa.me/2349024122646?text=Hello%20Teddy%27s%20Kitchen%2C%20I%20want%20to%20order', '_blank')">Chat on WhatsApp</button>
+  <button onclick="window.location.href='mailto:ogudipegoodness@gmail.com?subject=Order from website'">Email Us</button>
+  </section>
+  <p><strong>Location:</strong> Afe Babalola University (ABUAD), Ado-Ekiti,Ekiti State</p>
+  <p><a href="https://www.google.com/maps/search/?api=1&query=Afe+Babalola+University+Ado-Ekiti" target="_blank">📍 Open in Google Maps</a></p>
+
+  <script src="script.js"></script>
+  <footer style="text-align:center; padding:20px; background:#e53935; color:white;">
+  © 2026 Teddy's Kitchen. All rights reserved.
+</footer>
+</body>
+</html>
